@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Golden Spice - Home</title>
+        <meta name="description" content="The Golden Spice Mexican Grill">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/Icons/phone-icon.png">
+    </head>
+    <body class="contact-body">
+        <main id="contact-page">
+            <header>
+                <nav>
+                    <a href="./index.html">
+                        <img class="logo" src="./images/Icons/Logo.svg">
+                    </a>
+                    <div class="links">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a class="active-page" href="./contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile nav -->
+                <a onclick="openNav()" class="menu hamburger" href="#">
+                        <div id="top-hamburger"></div>
+                        <div id="mid-hamburger"></div>
+                        <div id="bot-hamburger"></div>
+                </a>
+            </header>
+            <div id="mobile_menu" class="overlay">
+                <a class="close" onclick="closeNav()">
+                    <p class="times">&times;</p>
+                </a>
+                <div class="overlay_content">
+                    <a href="./index.html">
+                        <img class="logo-overlay" src="./images/Icons/Logo.svg">
+                    </a>
+                    <a class="mob-links" href="./index.html">Home</a>
+                    <a class="mob-links" href="./about.html">About</a>
+                    <a class="mob-links mob-active" href="./contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="contact-container row "style="grid-column: 1 / span 8">
+                <!-- Contact info -->
+                <div class="col-md-6 ">
+                    <div class="contact-info d-flex justify-content-center align-items-center">
+                        <p>
+                            (209) 394-8248 <br>
+                            2275 Walnut Ave, Livingston, CA 95334<br>
+                            <span id="hours-text">Hours</span><br>
+                            Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed<br>
+                            Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed<br>
+                            Wednesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed<br>
+                            Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5PM–7PM<br>
+                            Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5PM–7PM<br>
+                            Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed<br>
+                            Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM–7PM<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- Contact form -->
+                <div class="col-md-6 ">
+                    <div class="contact-form d-flex justify-content-center align-items-center">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <p>
+                              <label><input type="text" name="name" placeholder="Name"/></label>   
+                            </p>
+                            <p>
+                              <label><input type="email" name="email" placeholder="E-mail"/></label>
+                            </p>
+                            <p>
+                            <p>
+                              <label><textarea name="message" placeholder="Message"></textarea></label>
+                            </p>
+                            <p>
+                              <button type="submit">Send</button>
+                            </p>
+                          </form>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

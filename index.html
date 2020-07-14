@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Golden Spice - Home</title>
+        <meta name="description" content="The Golden Spice Mexican Grill">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/Icons/home-icon.png">
+    </head>
+    <body>
+        <main id="main-page">
+            <header>
+                <nav>
+                    <a href="./index.html">
+                        <img class="logo" src="./images/Icons/Logo.svg">
+                    </a>
+                    <div class="links">
+                        <a class="active-page" href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile nav -->
+                <a onclick="openNav()" class="menu hamburger" href="#">
+                    <div id="top-hamburger"></div>
+                    <div id="mid-hamburger"></div>
+                    <div id="bot-hamburger"></div>
+                </a>
+            </header>
+            <div id="mobile_menu" class="overlay">
+                <a class="close" onclick="closeNav()">
+                    <p class="times">&times;</p>
+                </a>
+                <div class="overlay_content">
+                    <a href="./index.html">
+                        <img class="logo-overlay" src="./images/Icons/Logo.svg">
+                    </a>
+                    <a class="mob-links mob-active" href="./index.html">Home</a>
+                    <a class="mob-links" href="./about.html">About</a>
+                    <a class="mob-links" href="./contact.html">Contact</a>
+                </div>
+            </div>
+
+            <section class="info">
+                <h1 class="hero_font">Authentic Indian Grocery</h1>
+                <div class="icons">
+                    <div class="icon">
+                        <img src="./images/Icons/quality icon.svg" alt="Quality icon" />
+                        <div class="icon_info">
+                            <p class="icon_top">High Quality</p>
+                            <p class="icon_bottom">Items</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/Icons/Price icon.svg" alt="Price icon" />
+                        <div class="icon_info">
+                            <p class="icon_top">Unbeatable</p>
+                            <p class="icon_bottom">Prices</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/Icons/Staff icon.svg" alt="Staff icon" />
+                        <div class="icon_info">
+                            <p class="icon_top">Friendly</p>
+                            <p class="icon_bottom">Staff</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <script type="text/javascript" src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

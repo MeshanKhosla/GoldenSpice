@@ -1,0 +1,100 @@
+@import "./variables";
+body {
+    background: url(../images/Landing-page/BackgroundLP.png);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+
+.info {
+    grid-column: 2 / span 6;
+
+    .hero_font {
+        color: $Light100;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 4.375rem;
+    }
+
+    .icons {
+        display: flex;
+        margin-top: 55px;
+
+        .icon {
+            display: flex;
+            align-items: center;
+
+            .icon_info {
+                margin: 0 50px 0 15px;
+
+                .icon_top {
+                    font-size: 1.0625rem;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+
+                .icon_bottom {
+                    font-size: 1.5635rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .icon {
+        img {
+            height: 55px;
+            width: auto;
+        }
+
+        .icon_top {
+            font-size: 1rem;
+        }
+
+        .icon_bottom {
+            font-size: 1.125rem;
+        }
+    }
+    .info {
+        .hero_font {
+            font-size: 3.375rem;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .icon {
+        img {
+            height: 55px;
+            width: auto;
+        }
+
+        .icon_top {
+            font-size: 1rem;
+        }
+
+        .icon_bottom {
+            font-size: 1.125rem;
+        }
+    }
+    .info {
+        .hero_font {
+            font-size: 3.375rem;
+        }
+    }
+
+    .icons {
+        flex-direction: column;
+
+        .icon {
+            margin-bottom: 20px;
+        }
+    }
+}

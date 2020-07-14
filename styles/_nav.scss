@@ -1,0 +1,139 @@
+@import "./variables";
+
+header {
+    grid-column: 2 / span 6;
+
+    nav {
+        display: flex;
+        align-items: center;
+        height: 120px;
+
+
+        .links {
+            margin-left: auto;
+        
+            a {
+                font-size: 1.0625rem;
+                font-weight: 400;
+                transition: $Transition;
+                margin-right: 50px;
+                padding-bottom: 5px;
+
+                &:hover {
+                    border-bottom: 2px solid $tgsRed;
+                    text-decoration: none;
+                    color: $Light100;
+                }
+            }
+        }
+    }
+}
+
+
+.menu {
+    display: none;
+    width: 20px; // Hamburger icon width
+    margin-left: auto;
+    transform: translateY(-65px)
+}
+
+// Mobile nav
+
+@media only screen and (max-width: 700px) {
+    .links {
+        display: none;
+    }
+    .menu {
+        display: inherit;    
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+
+
+
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 45px;
+
+        .times {
+            font-size: 60px;
+        }
+    }
+
+    .logo-overlay {
+        transform: translateY(-50%);
+    }
+}
+
+.overlay_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    a {
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: $Transition;
+        text-decoration: none;
+    }
+
+    .mob-links {
+        &:hover {
+            color: $Light100;
+            border-bottom: 2px solid $tgsRed;
+        }
+    }
+    
+}
+.active-page {
+    border-bottom: 2px solid $tgsRed;
+    border-top: 2px solid $tgsRed;
+}
+
+.mob-active {
+    border-bottom: 2px solid $tgsRed;
+}
+.hamburger {
+    div {
+        width: 30px;
+        height: 3px;
+        background-color: $Light100;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay {
+
+        a {
+            font-size: 20px;
+        }
+        .close {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .links {
+        transform: translateX(90%);
+    }
+}

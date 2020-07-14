@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Golden Spice - Home</title>
+        <meta name="description" content="The Golden Spice Mexican Grill">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/Icons/info-icon.png">
+    </head>
+    <body>
+        <main id="about-page">
+            <header>
+                <nav>
+                    <a href="./index.html">
+                        <img class="logo" src="./images/Icons/Logo.svg">
+                    </a>
+                    <div class="links">
+                        <a href="./index.html">Home</a>
+                        <a class="active-page" href="./about.html">About</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile nav -->
+                <a onclick="openNav()" class="menu hamburger" href="#">
+                        <div id="top-hamburger"></div>
+                        <div id="mid-hamburger"></div>
+                        <div id="bot-hamburger"></div>
+                </a>
+            </header>
+            <div id="mobile_menu" class="overlay">
+                <a class="close" onclick="closeNav()">
+                    <p class="times">&times;</p>
+                </a>
+                <div class="overlay_content">
+                    <a href="./index.html">
+                        <img class="logo-overlay" src="./images/Icons/Logo.svg">
+                    </a>
+                    <a class="mob-links" href="./index.html">Home</a>
+                    <a class="mob-links mob-active" href="./about.html">About</a>
+                    <a class="mob-links" href="./contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- Content -->
+        <h1 id="about-text">About us</h1>
+
+        <div class="history-box">
+            <h3>History</h3>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa voluptatem deserunt, dolorum dolore, quod repellat minima tenetur reprehenderit nihil officiis quaerat, voluptate molestias nobis laboriosam molestiae. A impedit harum expedita, rerum recusandae facilis ducimus dolores unde repellendus assumenda ea laborum error voluptatem numquam optio aliquid inventore aliquam ipsum quas laudantium reprehenderit ad illum saepe! Earum fugiat saepe eius obcaecati reiciendis consequuntur excepturi fuga ut esse fugit maxime minima pariatur quas molestiae quam modi cumque ex, provident a. Asperiores tempore sapiente minus velit cupiditate et officia cumque distinctio eligendi eos. Soluta perspiciatis obcaecati fuga odio voluptatum itaque rerum quo perferendis.</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo praesentium necessitatibus illum labore. Incidunt exercitationem vero, porro repellendus, rerum quidem in perferendis quo cumque beatae necessitatibus quibusdam aliquam, similique animi reprehenderit dolore nesciunt adipisci eaque. Cum ducimus, maiores at totam eaque provident aperiam? Sed sapiente quas, perspiciatis cupiditate excepturi ipsum!</p>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

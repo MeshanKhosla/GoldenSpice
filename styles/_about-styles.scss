@@ -7,11 +7,6 @@
     @include backgroundSettings;
 }
 
-#about-text {
-    grid-column: 4 / span 6;
-    color: $Light100;
-    transform: translate(15%, -80%);
-}
 
 .history-box {
     grid-column: 2 / span 6;
@@ -22,37 +17,25 @@
         color: $Light100;
         text-align: center;
     }
+
+    hr {
+        background-color: $Light100;
+    }
 }
 
 
 @media only screen and (max-width: 1000px) {
-    #about-text {
-        transform: translate(15%, -50%);
-    }
-    #about-page {
-        height: 125vh;
-    }
     .history-box {
         transform: translateY(-20%);
     }
 }
 
 @media only screen and (max-width: 765px) {
-    #about-text {
-        transform: translate(0%, -80%);
-    }
-
     .history-box {
         transform: translateY(-10%);
     }
 }
 
-@media only screen and (max-width: 1100px) {
-
-    .history-box {
-        transform: translateY(-10%);
-    }
-}
 
 @media only screen and (max-width: 610px) {
 
@@ -64,12 +47,6 @@
 @media only screen and (max-width: 400px) {
     #about-page {
         overflow: auto;
-    }
-}
-
-@media only screen and (min-width: 2100px) {
-    #about-text {
-        transform: translate(5%, -40%);
     }
 }
 

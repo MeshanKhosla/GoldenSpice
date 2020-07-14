@@ -144,6 +144,12 @@ header nav .links a:hover {
   }
 }
 
+@media only screen and (max-width: 440px) {
+  .logo {
+    width: 90%;
+  }
+}
+
 body {
   background: url(../images/Landing-page/BackgroundLP.png);
 }
@@ -250,15 +256,6 @@ main {
   background-size: cover;
 }
 
-#about-text {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4 / span 6;
-  color: #F5F9FC;
-  -webkit-transform: translate(15%, -80%);
-          transform: translate(15%, -80%);
-}
-
 .history-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
@@ -274,14 +271,16 @@ main {
   text-align: center;
 }
 
+.history-box hr {
+  background-color: #F5F9FC;
+}
+
+.carousel {
+  -webkit-transform: translate(-100%, 100%);
+          transform: translate(-100%, 100%);
+}
+
 @media only screen and (max-width: 1000px) {
-  #about-text {
-    -webkit-transform: translate(15%, -50%);
-            transform: translate(15%, -50%);
-  }
-  #about-page {
-    height: 125vh;
-  }
   .history-box {
     -webkit-transform: translateY(-20%);
             transform: translateY(-20%);
@@ -289,17 +288,6 @@ main {
 }
 
 @media only screen and (max-width: 765px) {
-  #about-text {
-    -webkit-transform: translate(0%, -80%);
-            transform: translate(0%, -80%);
-  }
-  .history-box {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
-}
-
-@media only screen and (max-width: 1100px) {
   .history-box {
     -webkit-transform: translateY(-10%);
             transform: translateY(-10%);
@@ -316,13 +304,6 @@ main {
 @media only screen and (max-width: 400px) {
   #about-page {
     overflow: auto;
-  }
-}
-
-@media only screen and (min-width: 2100px) {
-  #about-text {
-    -webkit-transform: translate(5%, -40%);
-            transform: translate(5%, -40%);
   }
 }
 
